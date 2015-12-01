@@ -1,0 +1,107 @@
+html{
+    background-image: url(../img/zoofondo.jpg);
+    background-repeat: no-repeat;
+    background-color: olive;
+    overflow-x: hidden;
+}
+.zoocarlitos{
+    position:absolute;
+    top:700px;
+    left:540px;
+    font-size:7rem;
+    text-align: center;
+    display:flex;
+    color:violet;
+    font-family:"cube vol.2"
+}
+
+.b1{
+    color:brown;
+}
+.b2{
+    color:yellow;
+}
+.b3{
+    color:orange;
+}
+.b4{
+    color:green;
+}
+.b5{
+    color:skyblue;
+}
+.b6{
+    color:blue;
+}
+.b7{
+    color:purple;
+}
+.b8{
+    color:violet;
+}
+.b9{
+    color:pink;
+}
+.b11{
+    color:white;
+}
+
+#enlacesIndex a,#enlacesIndex a:visited {
+    position:relative;
+    top:900px;
+    left:540px;
+    margin-left: 150px;
+    text-decoration: none;
+    font-size: 2em;
+    color:white;
+    font-weight: bold;
+    border:solid 2px white;
+    border-radius: 10%;
+}
+#enlacesIndex a:hover{
+    transition-property: background-color;
+    transition-duration: 1.5s;
+    background-color: violet;
+}
+
+#cont {
+    position:absolute;
+    left:540px;
+    z-index: 1;
+}
+#fondocontenido{
+    position:absolute;
+    width: 100%;
+    height: 50%;
+    background-color: orange;
+    opacity: 0.5;
+}
+#fondocontenido2{
+    position:absolute;
+    width: 100%;
+    height: 50%;
+    background-color: skyblue;
+    opacity: 0.5;
+}
+#fondocontenido3{
+    position:absolute;
+    width: 100%;
+    height: 50%;
+    background-color: olive;
+    opacity: 0.5;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+.titulo{
+    color:white;
+}
+.atras{
+    font-size: 1.5em;
+    position:relative;
+    left:150px;
+}
+@font-face {font-family:"cube vol.2";src:url("../fonts/cube_vol2.eot?") format("eot"),url("../fonts/cube_vol2.woff") format("woff"),url("../fonts/cube_vol2.ttf") format("truetype"),url("../fonts/cube_vol2.svg#cube-vol.2") format("svg");font-weight:normal;font-style:normal;}
