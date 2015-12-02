@@ -6,7 +6,6 @@ $IDAnimal = Request::get("IDAnimal");
 $animal = $gestor->get($IDAnimal);
 $gestorZona = new ManageZona($bd);
 $gestorCuidador = new ManageCuidador($bd);
-//var_dump($gestorCountry->getValuesSelect());
 ?>
 <!DOCTYPE html>
 <html>

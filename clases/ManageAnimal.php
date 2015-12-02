@@ -8,7 +8,7 @@ class ManageAnimal {
     
     function __construct(DataBase $bd) {
         $this->bd = $bd;
-        var_dump($this->bd);
+        //var_dump($this->bd);
     }
     
     function get($IDAnimal){
@@ -45,7 +45,7 @@ class ManageAnimal {
         $parametrosSet['PeligroExt']=$animal->getPeligroExt();
         $parametrosSet['Edad']=$animal->getEdad();
         $parametrosSet['ZonaCode']=$animal->getZonaCode();
-        $parametrosSet['CuidadorCode']=$animal->getCuidadorCode();
+        $parametrosSet['cuidadorCode']=$animal->getCuidadorCode();
         
         $parametrosWhere = array();
         $parametrosWhere['IDAnimal'] = $animal->getID();
@@ -61,7 +61,7 @@ class ManageAnimal {
         $parametrosSet['PeligroExt']=$animal->getPeligroExt();
         $parametrosSet['Edad']=$animal->getEdad();
         $parametrosSet['ZonaCode']=$animal->getZonaCode();
-        $parametrosSet['CuidadorCode']=$animal->getCuidadorCode();
+        $parametrosSet['cuidadorCode']=$animal->getCuidadorCode();
         
         return $this->bd->insert($this->tabla, $parametrosSet);
     }

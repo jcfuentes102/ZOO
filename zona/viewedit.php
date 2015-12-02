@@ -19,7 +19,13 @@ $zona = $gestor->get($IDZona);
         <form action="phpedit.php" method="POST">
             ID Zona<sup>*</sup> <input required  type="text" name="IDZona" value="<?php echo $zona->getIDZona()?>" /><br /><br />
             Nombre Zona<sup>*</sup> <input required  type="text" name="NombreZona" value="<?php echo $zona->getNombreZona()?>" /><br /><br />
-            Tipo<sup>*</sup> <input required  list="continentes" name="Tipo" value="<?php echo $zona->getTipo()?>" /><br /><br />
+            Tipo<sup>*</sup> <input required  list="tipos" name="Tipo" value="<?php echo $zona->getTipo()?>" /><br /><br />
+            <datalist id="tipos">
+                <option value="Agua" />
+                <option value="Aire" />
+                <option value="Selva" />
+                <option value="Tierra" />
+            </datalist>
 
             <input type="hidden" name="pkCode" value="<?php echo $zona->getIDZona()?>" />
             <input type="submit" value="edicion"/>
@@ -27,7 +33,7 @@ $zona = $gestor->get($IDZona);
         </form>
        <a href="index.php" class="atras">Volver</a>
     </div>
-                <div id="enlacesIndex">
+        <div id="enlacesIndex">
             <a href="index.php">Animales</a>
             <a href="../zona/index.php">Zonas</a>
             <a href="../cuidador/index.php">Cuidadores</a>

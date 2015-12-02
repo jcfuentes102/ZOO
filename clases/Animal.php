@@ -92,16 +92,26 @@ class Animal {
         $this->PeligroExt = $valores[3 + $inicio];
         $this->Edad = $valores[4 + $inicio];
         $this->ZonaCode = $valores[5 + $inicio];
-        $this->cuidadorCode = $valores[6 + $inicio];
+        $this->CuidadorCode = $valores[6 + $inicio];
     }
 
     function set($valores, $inicio=0){
-        $i = 0;
-        foreach ($this as $indice => $valor) {
-           $this->$indice = $valores[$i+$inicio];
-           $i++;
-        }
+                $this->IDAnimal = $valores[0 + $inicio];
+        $this->Familia = $valores[1 + $inicio];
+        $this->NombreAnimal = $valores[2 + $inicio];
+        $this->PeligroExt = $valores[3 + $inicio];
+        $this->Edad = $valores[4 + $inicio];
+        $this->ZonaCode = $valores[5 + $inicio];
+        $this->cuidadorCode = $valores[6 + $inicio];
     }
+        
+    
+//        $i = 0;
+//        foreach ($this as $indice => $valor) {
+//           $this->$indice = $valores[$i+$inicio];
+//           $i++;
+//        }
+//    }
 
     public function __toString() {
         $r = '';

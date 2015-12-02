@@ -18,7 +18,7 @@ $gestorCuidador = new ManageCuidador($bd);
             <h1 class="titulo">Insertar un nuevo animal al ZOO!</h1>
             Nombre: <input type="text" name="NombreAnimal" value="" /><br/><br/>
             Familia: <input type="text" name="Familia" value="" /><br/><br/>
-            Peligro Extinción (S ó N): <input type="text" name="PeligroExt" value="" /><br/><br/>
+            Peligro Extinción: Sí<input type="radio" name="PeligroExt" value="S" />No<input type="radio" name="PeligroExt" value="N" /><br/><br/>
             Edad: <input type="number" name="Edad" value=""/><br><br/>
             Cuidador: <?php echo Util::getSelect("CuidadorCode", $gestorCuidador->getValuesSelect());?><br/><br/>
             Zona Destinado: <?php echo Util::getSelect("ZonaCode", $gestorZona->getValuesSelect());?><br/><br/>
